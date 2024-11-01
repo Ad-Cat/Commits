@@ -8,7 +8,7 @@ while a<=100:
     with open("README.md", "w", encoding="utf-8") as f:
         f.write("# " + beijing_time.strftime('%Y-%m-%d %H:%M:%S'))
         f.write("\n\n")
-        url = """<a href="https://github.com/Ad-closeNN"><img align="center" src="https://ad-closenn-stats.vercel.app/api?username=Ad-closeNN&show_icons=true&include_all_commits=true&theme=buefy" alt="Ad-closeNN's github stats" /></a>"""
+        url = """<a href="https://github.com/Ad-closeNN"><img align="center" src="https://ad-closenn-stats.vercel.app/api?username=Ad-Cat&show_icons=true&include_all_commits=true&theme=buefy" alt="Ad-Cat's github stats" /></a>"""
         f.write(url)
     os.system("git add .")
     os.system("git commit -S -m auto-run")
