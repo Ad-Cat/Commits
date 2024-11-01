@@ -8,7 +8,7 @@ while a<=100:
     with open("README.md", "w", encoding="utf-8") as f:
         f.write("# " + beijing_time.strftime('%Y-%m-%d %H:%M:%S'))
     os.system("git add .")
-    os.system("git commit -S -m " + beijing_time.strftime('%Y-%m-%d %H:%M:%S'))
+    os.system("git commit -S -m auto-run")
     os.system("git pull --rebase")
     os.system("git push")
     print("本次为第",a,"次")
