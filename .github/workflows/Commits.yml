@@ -1,0 +1,30 @@
+name: 刷 Commit
+
+on:
+    schedule:
+        - cron: '*/5 * * * *'
+    workflow_dispatch:
+permissions:
+  contents: write
+  deployments: write
+
+jobs:
+    Clone:
+        runs-on: ubuntu-latest
+        steps:
+            - name: 检出仓库
+              uses: actions/checkout@v4
+
+            - name: 导入 GPG Key
+              uses: crazy-max/ghaction-import-gpg@v6
+              with:
+                gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+                passphrase: ${{ secrets.PASSPHRASE }}
+                git_user_signingkey: true
+                git_commit_gpgsign: true
+            
+            - name: 运行脚本
+              run: |
+                git config user.name "Ad-Cat"
+                git config user.email "Ad_closeNN@outlook.com"
+                python3 "Time Generator.py"
