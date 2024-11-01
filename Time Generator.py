@@ -12,9 +12,7 @@ while a<=100:
         f.write(url)
     os.system("git add .")
     os.system("git commit -S -m auto-run")
-    os.system("git pull --rebase")
     os.system("git push")
     print("本次为第",a,"次")
     a = a + 1
-    time.sleep(3)
 print("已成功执行 100 次")
