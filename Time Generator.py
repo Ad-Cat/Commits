@@ -1,5 +1,5 @@
 from datetime import datetime
-import pytz, os
+import pytz, os, time
 a = 0
 while a<=100:
     utc_time = datetime.now(pytz.utc)
@@ -13,4 +13,5 @@ while a<=100:
     os.system("git push")
     print("本次为第",a,"次")
     a = a + 1
+    time.sleep(1)
 print("已成功执行 100 次")
