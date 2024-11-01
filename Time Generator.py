@@ -13,5 +13,5 @@ while a<=100:
     os.system("git push")
     print("本次为第",a,"次")
     a = a + 1
-    time.sleep(1)
+    time.sleep(0.0001)
 print("已成功执行 100 次")
