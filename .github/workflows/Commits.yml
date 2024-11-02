@@ -2,7 +2,7 @@ name: 刷 Commit
 
 on:
     schedule:
-        - cron: '0 */8 * * *'
+        - cron: '0 */5 * * *'
     workflow_dispatch:
 permissions:
   contents: write
