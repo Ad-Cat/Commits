@@ -11,6 +11,7 @@ while a<=10000:
         url = """<a href="https://github.com/Ad-closeNN"><img align="center" src="https://ad-closenn-stats.vercel.app/api?username=Ad-Cat&show_icons=true&include_all_commits=true&theme=buefy" alt="Ad-Cat's github stats" /></a>"""
         f.write(url)
     os.system("git add .")
+    os.system("git pull)
     os.system("git commit -S -m auto-run")
     os.system("git push")
     print("本次为第",a,"次")
